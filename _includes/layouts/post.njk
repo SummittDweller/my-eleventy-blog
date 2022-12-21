@@ -9,7 +9,7 @@ layout: layouts/base.njk
         <article class="content mt-5">
           <h1 class="title">{{ title }}</h1>
           <p class="subtitle is-6">
-            Published: <time datetime="{{ page.date }}">{{ page.date | readableDate }}</time> &bull; Last Commit: <time datetime="{{ last_modified_at }}">{{ last_modified_at | readableDT }}</time> 
+            Published: <time datetime="{{ page.date }}"><b>{{ page.date | readableDate }}</b></time> &bull; Last Commit: <b><time datetime="{{ last_modified_at }}"><b>{{ last_modified_at | readableDT }}</b></time> 
           </p>
           {{ content | safe }}
         </article>

@@ -16,9 +16,7 @@ module.exports = function (eleventyConfig) {
 
   // readableDT filter 
   eleventyConfig.addFilter('readableDT', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'local' }).toFormat(
-      'yyyy-LLL-dd:HH.mm UTC'
-    );
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATETIME_FULL);
   });
   
 };
