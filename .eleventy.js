@@ -14,4 +14,11 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  // readableDT filter 
+  eleventyConfig.addFilter('readableDT', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: 'local' }).toFormat(
+      'yyyy-LLL-dd:HH.mm'
+    );
+  });
+  
 };
