@@ -1,7 +1,7 @@
 {
   "name": "eleventy-blog",
   "version": "1.0.0",
-  "description": "",
+  "description": "--- last_modified_at: 2022-12-21T19:02:28 ---",
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
@@ -11,9 +11,17 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^1.0.2"
   },
   "dependencies": {
     "luxon": "^3.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SummittDweller/my-eleventy-blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SummittDweller/my-eleventy-blog/issues"
+  },
+  "homepage": "https://github.com/SummittDweller/my-eleventy-blog#readme"
 }

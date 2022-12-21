@@ -2,11 +2,16 @@
 title: My First Eleventy Experience 
 description: "This is the `README.md` file from my first Eleventy experience at https://github.com/SummittDweller/eleventy-blog."
 tags: post
-date: 2022-12-21T12:38:25-06:00
+date: "Created"
 layout: layouts/post.njk
 last_modified_at: 2022-12-21T19:02:28
 ---
 
+**Note**: I added one `raw` and `endraw` set of tags to wrap this entire text so that Eleventy won't try to process embedded tags that it would normally balk on!
+ 
+<hr/> 
+
+{% raw %}
 # eleventy-blog
 
 Built from https://www.digitalocean.com/community/tutorials/how-to-create-and-deploy-your-first-eleventy-website
@@ -294,3 +299,4 @@ This `README.md` file is likely to become the first `post` in [my-eleventy-blog]
 Rather than deploying [my-eleventy-blog](https://github.com/SummittDweller/my-eleventy-blog) to _DigitalOcean_, I'll probably follow the guidance from [Deploying an 11ty Site to Azure Static Web Apps](https://squalr.us/2021/05/deploying-an-11ty-site-to-azure-static-web-apps/) to host it on _Azure_.   I've used both hosts in the past, and I've been with _DigitalOcean_ much longer, but I still have some room for another "free" static app with _Azure_, so that's where I'm headed with this for now.   
 
 Wish me luck!  
+{% endraw %}

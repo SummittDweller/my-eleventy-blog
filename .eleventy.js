@@ -7,9 +7,11 @@ module.exports = function (eleventyConfig) {
   // Watch the `css` directory for changes
   eleventyConfig.addWatchTarget('css');
 
+  // readableDate filter 
   eleventyConfig.addFilter('readableDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
       'dd LLL yyyy'
     );
   });
+
 };
