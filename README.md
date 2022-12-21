@@ -1,3 +1,7 @@
+---
+last_modified_at: 2022-12-21T19:02:28
+---
+
 # my-eleventy-blog
 
 Built from https://www.digitalocean.com/community/tutorials/how-to-create-and-deploy-your-first-eleventy-website and https://github.com/SummittDweller/eleventy-blog.  
