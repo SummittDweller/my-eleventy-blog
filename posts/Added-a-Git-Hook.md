@@ -5,7 +5,7 @@ tags: post
 date: "Created"
 # date: "git Last Modified"
 layout: layouts/post.njk
-last_modified_at: 2022-12-21T20:21:46
+last_modified_at: 2022-12-21T20:28:52
 ---
 
 Ok, this post wasn't originally specific to `Eleventy`, but I think it's important and worth noting here.  On the posted date I followed my own advice from [Creating a Git Hook](https://static.grinnell.edu/dlad-blog/posts/131-creating-a-git-hook/) and applied it to this blog.  But then I found a better `Eleventy` way in https://www.11ty.dev/docs/dates/.     
