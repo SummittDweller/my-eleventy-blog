@@ -1,5 +1,5 @@
 ---
-title: Added the SummittServices.com Custom Apex Domain 
+title: Creating `eleventy.SummittServices.com` 
 description: Another seemingly non-Eleventy post, but vitally important nonetheless. 
 tags: post
 date: "Created"    # date: "git Last Modified"
