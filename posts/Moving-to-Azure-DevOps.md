@@ -4,10 +4,14 @@ description: "This project tried to move from https://github.com/SummittDweller/
 tags: post
 date: "Created"
 layout: layouts/post.njk
-last_modified_at: 2023-02-01T21:04:57
+last_modified_at: 2023-02-03T11:12:31
 ---
 
-Not much to tell you here except that the blog was moved from a GitHub workflow and repository, to Azure DevOps so any/all mentions of https://github.com/SummittDweller/eleventy-blog in past posts are ~now equivalent to https://summittdweller@dev.azure.com/summittdweller/My-Eleventy-Blog/_git/My-Eleventy-Blog~ still valid.  
+Not much to tell you here except that the blog was moved from a GitHub workflow and repository, to Azure DevOps, then back to GitHub, so any/all mentions of https://github.com/SummittDweller/eleventy-blog in past posts are ~now equivalent to https://summittdweller@dev.azure.com/summittdweller/My-Eleventy-Blog/_git/My-Eleventy-Blog~ still valid.  
+
+# Azure Pipelines
+
+Azure DevOps replaces GitHub Actions in Azure with "Azure Pipelines".  I'm not a fan.  Microsoft had such a good thing going in GitHub Actions that I just assumed Pipelines would leverage that.  Nope, and that's largely why I moved back to GitHub with this.  
 
 # Pipeline Errors
 
@@ -17,5 +21,18 @@ So, in the Azure Pipelines there's an option to select an "Existing Azure Pipeli
 
 I have yet to find any guidance telling me how to remove that errant `.github/workflows/azure-static-web-apps-white-cliff-08b1f8010.yml` pipeline, so I'm just going to remove that file (moving it to an `.out-of-the-way` directory) and see what happens.  
 
+Ok, I managed to get a "correct" Pipeline into place after removing the errant one.  Unfortunateluy, that's when I discovered that to run a Pipeline in the free tier of Azure DevOps you have to be "granted permission" and that's a two to three-day process with no guarantee of success.  :frowning:  You can, of course, pay for the right to run a Pipeline, but I'm not inclined to do that either when GitHub Actions are free AND very capable.  
+
+# Moving Back to GitHub
+
+So, this experimental blog has officially moved back to GitHub, specifically to [https://github.com/SummittDweller/my-eleventy-blog](https://github.com/SummittDweller/my-eleventy-blog) with CI/CD deployment via GitHub Actions to [My Eleventy Blog](https://eleventy.summittservices.com/).  
+
+# A New/Old Path Forward
+
+My goal now with this blog is to introduce [NetlifyCMS](https://www.netlifycms.org/) into a site that's NOT hosted in [Netlify.com](https://www.netlify.com/).  I'd also like to see if I can make [StatiCrypt](https://www.npmjs.com/package/staticrypt) work for selected pages.  My target for all of the above is [my Azure Services portal](https://portal.azure.com/#home) leveraging [GitHub Actions](https://github.com/features/actions) for CI/CD deployment and all of the associated heavy-lifting.  
+
+I found what looks like a wonderful guide at [jahlen/hugo-azure-static-webapp](https://github.com/jahlen/hugo-azure-static-webapp).  Let's give it a go.  
+
+---
 
 Now you know.  That's all, FOR NOW, folks!    
