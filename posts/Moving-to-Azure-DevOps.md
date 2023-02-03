@@ -4,7 +4,7 @@ description: "This project tried to move from https://github.com/SummittDweller/
 tags: post
 date: "Created"
 layout: layouts/post.njk
-last_modified_at: 2023-02-03T11:12:31
+last_modified_at: 2023-02-03T11:32:19
 ---
 
 Not much to tell you here except that the blog was moved from a GitHub workflow and repository, to Azure DevOps, then back to GitHub, so any/all mentions of https://github.com/SummittDweller/eleventy-blog in past posts are ~now equivalent to https://summittdweller@dev.azure.com/summittdweller/My-Eleventy-Blog/_git/My-Eleventy-Blog~ still valid.  
@@ -31,7 +31,15 @@ So, this experimental blog has officially moved back to GitHub, specifically to 
 
 My goal now with this blog is to introduce [NetlifyCMS](https://www.netlifycms.org/) into a site that's NOT hosted in [Netlify.com](https://www.netlify.com/).  I'd also like to see if I can make [StatiCrypt](https://www.npmjs.com/package/staticrypt) work for selected pages.  My target for all of the above is [my Azure Services portal](https://portal.azure.com/#home) leveraging [GitHub Actions](https://github.com/features/actions) for CI/CD deployment and all of the associated heavy-lifting.  
 
-I found what looks like a wonderful guide at [jahlen/hugo-azure-static-webapp](https://github.com/jahlen/hugo-azure-static-webapp).  Let's give it a go.  
+## The NetlifyCMS Piece
+
+I found what looks like a wonderful guide at [jahlen/hugo-azure-static-webapp](https://github.com/jahlen/hugo-azure-static-webapp).    
+
+## The StatiCrypt Piece
+
+In addtion to the implementation shown above, I'd like to also engage [StatiCrypt](), as previously mentioned, and I found a "guide" without much guidance or documentation :frowning:  Fortunately, this "guide" at [Jack-alope/staticrypt-github-actions](https://github.com/Jack-alope/staticrypt-github-actions) does include a key example [`encrypt.yml` file](https://github.com/Jack-alope/staticrypt-github-actions/blob/main/.github/workflows/encrypt.yml).  
+
+Let's take these two bits of wisdom for a spin, eh?  
 
 ---
 
