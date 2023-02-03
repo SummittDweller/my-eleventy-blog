@@ -4,7 +4,7 @@ description: "This project tried to move from https://github.com/SummittDweller/
 tags: post
 date: "Created"
 layout: layouts/post.njk
-last_modified_at: 2023-02-03T11:32:19
+last_modified_at: 2023-02-03T11:48:39
 ---
 
 Not much to tell you here except that the blog was moved from a GitHub workflow and repository, to Azure DevOps, then back to GitHub, so any/all mentions of https://github.com/SummittDweller/eleventy-blog in past posts are ~now equivalent to https://summittdweller@dev.azure.com/summittdweller/My-Eleventy-Blog/_git/My-Eleventy-Blog~ still valid.  
@@ -39,8 +39,14 @@ I found what looks like a wonderful guide at [jahlen/hugo-azure-static-webapp](h
 
 In addtion to the implementation shown above, I'd like to also engage [StatiCrypt](), as previously mentioned, and I found a "guide" without much guidance or documentation :frowning:  Fortunately, this "guide" at [Jack-alope/staticrypt-github-actions](https://github.com/Jack-alope/staticrypt-github-actions) does include a key example [`encrypt.yml` file](https://github.com/Jack-alope/staticrypt-github-actions/blob/main/.github/workflows/encrypt.yml).  
 
-Let's take these two bits of wisdom for a spin, eh?  
+## An Eleventy Spin
+
+I'm also interested in doing all of the above with [Eleventy](https://www.11ty.dev/), so I found [Setup Netlify CMS with Eleventy](https://www.seanmcp.com/articles/setup-netlify-cms-with-eleventy/) for guidance.  
+
+# Coordination
+
+All of the pertinent aforementioned resources should be available in a single [OneTab](https://addons.mozilla.org/en-US/firefox/addon/onetab/) that I've saved as a webpage at: https://www.one-tab.com/page/1cYmhYFrSZ2OMY9A0hBMYg.  
 
 ---
 
-Now you know.  That's all, FOR NOW, folks!    
+Let's take these three bits of wisdom for a spin, eh?  
